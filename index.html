@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Tile Game</title>
+</head>
+<style>
+  body{
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url('./1693855988569.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .title{
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    font-family: Dosis;
+  }
+  .wrapper{
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+  }
+  .tiles{
+    background-color: rgba(255, 255, 255, 0.155);
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    border: 1px solid white;
+    border-radius: 8px;
+    backdrop-filter: blur(15px);
+  }
+  .tile{
+    background-color: #ffffff71;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 2px dashed black;
+    border-radius: 10px;
+    font-family: Dosis;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    transition: 0.75s ease-out;
+  }
+  .tile:hover{
+    transform: rotate(360deg);
+    cursor: pointer;
+  }
+  .tile:active{
+    background-color: rgba(0, 0, 0, 0.346);
+    font-size: x-large;
+  }
+</style>
+<script defer src="script.js"></script>
+<body>
+  <h2 class="title">memory tile game || score <span class="score">0</span></h2>
+  <div class="wrapper">
+    <div class="tiles">
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+      <div class="tile">?</div>
+    </div>
+  </div>
+</body>
+</html>
